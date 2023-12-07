@@ -32,15 +32,12 @@ for game in games:
     game_dict[game_number] = color_list
 
 for game, color_sets in game_dict.items():
-    failure = 0
-    for reveal in color_sets:
-        for color, amount in reveal.items():         
-            if amount > limit_dict[color]:
-                failure += 1
-    if failure == 0:
-        total += game
+#    for reveal in color_sets:
+#        for color, amount in reveal.items():         
+#            if amount > reveal[color]:
+#                reveal[color] = amount
                 
-print(total)
+print(game_dict)
 
 
         
